@@ -1,0 +1,40 @@
+<div class="containertotal">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="h1titulo">
+                <img src="assets/images/soccerplace.jpg" alt="Logo" class="logo" width="50" height="50" style="margin-right: 10px;">
+                Tienda Deportiva Pollo
+            </h1>
+        </div>
+    </div>
+    <div class="form-row justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="radio-input" style="margin: 0 10px;">
+                <a routerLink="/principal" routerLinkActive="active">
+                    <input type="radio" id="inicio" name="vista">
+                    <label for="inicio">Inicio</label>
+                </a>
+            </div>
+            <div class="radio-input" style="margin: 0 10px;">
+                <a routerLink="/productos" routerLinkActive="active">
+                    <input type="radio" id="productos" name="vista">
+                    <label for="productos">Productos</label>
+                </a>
+            </div>
+            <div class="radio-input" style="margin: 0 10px;">
+                <a routerLink="/contacto" routerLinkActive="active">
+                    <input type="radio" id="contacto" name="vista">
+                    <label for="contacto">Contacto</label>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="text-center mt-4">
+    <p>Tienda deportiva Pollo</p>
+    <p>paulo081002correo.com</p>
+    <p>4776009669</p>
+</footer>

@@ -1,0 +1,190 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+//Estilos generales
+$verdeclaro: #8BBF73;
+$verdefuerte: #74BF60;
+$azulclaro: #07668C;
+$azulfuerte: #021D40;
+
+.containertotal {
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* Añadir padding a todo el contenedor */
+}
+
+.rowancho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.h1titulo {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: $azulfuerte;
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; /* Añadir márgenes laterales */
+}
+
+.h1titulo i {
+    margin-right: 5px;
+}
+
+.searchBox {
+    display: flex;
+    max-width: 700px; 
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 0 auto; 
+    padding: 0 10px; 
+    margin-bottom: 20px; /* Añadir margen inferior */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    border: solid 3px $azulclaro;
+}
+
+.searchButton {
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, $azulclaro 0%, $azulfuerte 100%));
+    border: 0;  
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    margin-left: auto;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    padding: 24px;
+    width: 100%;
+}
+
+.cardContainer {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid $azulfuerte;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.5s ease;
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.card:hover {
+    transform: scale(1.04);
+    filter: contrast(120%);
+}
+
+.tipoproducto {
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    color: $azulfuerte;
+}
+
+.producto {
+    font-size: 1.8em;
+    color: $azulfuerte;
+}
+
+.radio-input {
+    display: flex;
+    justify-content: center; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px; 
+}
+
+.radio-input input[type="radio"] {
+    display: none;
+}
+
+.radio-input label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: $verdefuerte;
+    border-radius: 5px;
+    margin-right: 12px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    color: #fff; /* Cambiado a blanco */
+}
+
+.radio-input label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.radio-input input[type="radio"]:checked + label:before {
+    background-color: blue;
+    top: 0;
+}
+
+.radio-input input[type="radio"]:checked + label {
+    background-color: $verdeclaro;
+    color: #fff;
+    border-color: $azulfuerte;
+    animation: radio-translate 0.5s ease-in-out;
+}
+
+.radio-input a.active {
+    font-weight: bold; 
+    color: #333; 
+}
+
+.radio-input a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.radio-input a:hover {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+footer {
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #f2f2f2; 
+    color: black; 
+}
+
+footer p {
+    margin: 5px 0;
+}

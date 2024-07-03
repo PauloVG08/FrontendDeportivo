@@ -1,0 +1,14 @@
+<div class="banner">
+    <img src="assets/images/banner.jpg" alt="banner">
+</div>
+
+<div class="row mt-3" *ngIf="productos.length > 0">
+    <div class="col-md-4 text-center" *ngFor="let producto of productos | slice:0:3">
+            <div class="card">
+                <img [src]="producto.imagen" alt="{{producto.nombre}}" style="width: 250px; height: 200px;">
+                <p>{{ producto.nombre }}</p>
+                <p>{{ producto.categoria }}</p>
+                <p>{{ producto.precio}}</p>
+            </div>
+    </div>
+</div>
